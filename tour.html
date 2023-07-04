@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" 
+    integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    tr{
+        background-color: gray;
+    }
+    tr:nth-child(2n){
+        background-color: lightgray;
+    }
+  </style>
+
+</head>
+<body>
+       <div class="table"></div>
+       <script>
+        let table = document.querySelector(".table");
+        (
+            async()=>{
+                let workbook = XLSX.read(await(await fetch("./databasesheet.xlsx")).arrayBuffer());
+                console.log(workbook);
+                let worksheet = workbook.SheetNames;
+                worksheet.forEach(name=>{
+                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                    table.innerHTML +='<h3>${name}</h3>${html}';
+                })
+            }
+        )
+       </script>
+</body>
+</html>

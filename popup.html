@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+    background-color: rgb(238, 182, 210);
+      top: 30%;
+      bottom: 50%;
+      position: absolute;
+      left: 500px;
+      right: 500px;
+      margin: 0;
+      width: 320px;
+      height: 170px;
+      padding: 10px;
+      border: 5px solid grey;
+    }
+    .submit {
+      width: 100px;
+      height: 50px;
+      background-color: chartreuse;
+      margin: 0.1cm;
+      cursor: pointer;
+    }
+  </style>
+  <body align="center">
+    <div class="box">
+      If you want to access the content of our website, First you have to <b>LOGIN.</b> 
+      <br/> <br>
+      <button
+        id="submit"
+        class="submit"
+        onclick="window.location.href='signup1.php'">
+        Login Please
+      </button>
+    </div>
+  </body>
+</html>

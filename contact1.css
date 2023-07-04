@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    font-size: lem;
+    line-height: l.5em;
+    background-image: url('contact1.jpg');
+    max-width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*  */
+}
+
+.head h1 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.table {
+    padding-left: 300px;
+}
+
+a {
+   
+    text-align: center;
+    color: black;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.GFG {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: navy;
+    color: white;
+    padding: 4px -3px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: -3px;
+    cursor: pointer;
+
+}

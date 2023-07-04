@@ -1,0 +1,7 @@
+<?php
+echo "Why ur bothering me????"
+
+
+
+
+?>

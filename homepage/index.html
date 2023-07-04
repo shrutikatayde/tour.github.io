@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>homepage</title>
+  <link rel="stylesheet" href="index1.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <a href="#" class="logo"><img src="logo.png" style="width: 70px; height: 70px" alt="" /></a>
+
+    <ul class="navbar">
+      <li><a href="index.html" class="active1">Home</a></li>
+      <li>
+        <a href="/tours/search1.php">Tours</a>
+        <div class="sub-menu-1" style="border: 1px; border-radius: 20px; background-color: rgba(19, 56, 77, 0.637);">
+          <ul>
+            <li><a href="../tourP/historicalplaces.html">HISTORICAL</a></li>
+            <li><a href="../tourP/hillstation.html">HILL-STATION</a></li>
+            <li><a href="../tourP/Shrines.html">SHRINES</a></li>
+            <li><a href="../tourP/Beaches.html">BEACH</a></li>
+            <li><a href="../tourP/waterpark.html">WATERPARK</a></li>
+            <li><a href="../tourP/Caves.html">CAVES</a></li>
+            <li><a href="../tourP/Sanctuary.html">SANCTUARY</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">Book</a>
+        <div class="sub-menu-1" style="border: 1px; border-radius: 20px; background-color: rgba(19, 56, 77, 0.637);">
+          <ul>
+            <li>
+              <a href="../BookNow/hotel.php">HOTEL</a>
+            </li>
+            <li>
+              <a href="../BookNow/travel1.php">TRAVELLING</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li><a href="../galleryD/dbms.html">Gallery</a></li>
+
+
+      <li><a href="../aboutus.html">About Us</a></li>
+      <li><a href="../contactus.html">Contact Us</a></li>
+      <li><a href="../logout.php">logout</a></li>
+      <li><a href="../BookNow/feedback.php">Feedback</a></li>
+    </ul>
+
+    <div class="main">
+      <a href="../signup1.php"><i class="ri-user-fill" style="padding: 10px"></i>
+        <span>Register</span></a>
+      <!-- search -->
+      <div class="btn">
+        <!-- <button class="button1" onclick="document.location='#'"></button> -->
+        <a href="../search1.php" class="button1"><i class="fa fa-search"></i><span></span></a>
+      </div>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="mySlides fade">
+      <video src="clipp.mp4" muted loop autoplay></video>
+
+      <!-- <section>
+            <div class="content">
+              <h2>welcome TO</h2>
+              <h2>TOURISM MANAGEMENT SYSTEM</h2>
+            </div> -->
+      <!-- 
+            <div class='line'>
+              <h2 class='pop-outin'>TOURISM MANAGEMENT SYSTEM</h2>
+            </div> -->
+
+      <div class='line'>
+        <h2><span class="auto-type"></span></h2>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["WELCOME TO TOURISM MANAGEMENT SYSTEM"],
+          typeSpeed: 200,
+          backSpeed: 150,
+          loop: true
+
+        })
+      </script>
+
+
+      <button class="button" onclick="document.location='#explore'">
+        <span>Explore</span>
+      </button>
+    </div>
+  </div>
+  <div class="mySlides fade">
+    <img src="../homepage/img/maha2.jpg" style="width: 100%; height: 650px" />
+
+    <div class="text">
+      <b> MAHABALESHWAR<br />(Hill Station)</b>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/taj.jpg" style="width: 100%; height: 650px" />
+    <div class="text">TAJ HOTEL<br />MUMBAI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/shirdi.jpg" style="width: 100%; height: 650px" />
+    <div class="text">SAI-BABA TEMPLE <br />MUMBAI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/juhu.jpg" style="width: 100%; height: 650px" />
+    <div class="text">JUHU BEACH<br />MUMBAI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/park.jpg" style="width: 100%; height: 650px" />
+    <div class="text">WET N JOY WATERPARK<br />MUMBAI</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/Ajanta.jpg" style="width: 100%; height: 650px" />
+    <div class="text">AJANTA CAVES<br />AURANGABAD</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../homepage/img/koyna.jpg" style="width: 100%; height: 650px" />
+    <div class="text">KOYNA WILDLIFE SANCTUARY<br />SATARA</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+  <br />
+  </div>
+
+  <div class="section" id="explore">
+    <br /><br /><br />
+    <div class="row">
+      <div class="column">
+        <h2>Historical Places</h2>
+        <br />
+        <p>
+          Indian history is replete with the rise and fall of many states.
+          Monuments built by various Kings throw light on India’s past Taj
+          Mahal, built by Shah Jahan, is one of the seven wonders of the
+          world. Red Fort is famous for its use of red sandstone and
+          marble.<br />
+          <br />The construction of Qutub Minar was started by
+          Qutub-ud-din-Aibak and completed by Iltutmish. It is considered a
+          symbol of military power of the Turko-Afghan dynasty. Hyderabad is
+          often identified with ‘Charminar’. Some religious monuments include
+          Jagannath Temple, Konark Sun Temple, Badrinath Temple, Delhi’s Jama
+          Masjid, Amritsar’s ‘Golden Temple’ etc.<br /><br />
+          Some great buildings have also been built in India by the British.
+          They are Parliament House, Rashtrapati Bhavan, Victoria Memorial
+          etc. All these monuments tell the story of the past but will stand
+          gloriously beyond the present, perhaps, forever.
+        </p>
+      </div>
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/h2.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/hill4.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+      <div class="column">
+        <h2>Hill-station</h2>
+        <br />
+        <p>
+          A hill station is a town located at a higher elevation than the
+          nearby plain or valley. <br /><br />The term was used mostly in
+          colonial Asia (particularly in India), but also in Africa (albeit
+          rarely), for towns founded by European colonialists as refuges from
+          the summer heat and, as Dale Kennedy observes about the Indian
+          context, "the hill station ... was seen as an exclusive British
+          preserve: here it was possible to render the Indian into an. A hill
+          station is a plce that when we get exhausted from our tiresome anfd
+          monotonous routine, it provides us relaxation. Provides freshness to
+          our mind and body as well. Infact, we can say that hill station is a
+          source of recreation.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Shrines</h2>
+        <br />
+        <p>
+          A shrine (Latin: scrinium "case or chest for books or papers"; Old
+          French: escrin "box or case") is a sacred or holy space dedicated to
+          a specific deity, ancestor, hero, martyr, saint, daemon, or similar
+          figure of respect, wherein they are venerated or worshipped. Shrines
+          often contain idols, relics, or other such objects associated with
+          the figure being venerated.<br /><br />
+          A shrine at which votive offerings are made is called an altar.
+          Shrines are found in many of the world's religions, including
+          Christianity, Islam, Hinduism, Buddhism, Chinese folk religion,
+          Shinto, indigenous Philippine folk religions, and Asatru as well as
+          in secular and non-religious settings such as a war memorial.
+          <br />Shrines can be found in various settings, such as churches,
+          temples, cemeteries, museums, or in the home. However, portable
+          shrines are also found in some cultures
+        </p>
+      </div>
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/tirupati.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/b3.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+      <div class="column">
+        <h2>Beach</h2>
+        <br />
+        <p>
+          India's shorelines are endowed with a glorious beauty that is
+          reflected in its undulating golden beaches that make for an ideal
+          vantage point to watch the sun dipping into the sea.<br /><br />
+          Beaches stroke both the eastern and western coasts of the Indian
+          peninsula. They also act as sentinels of the rich cultural heritage
+          of India and host many temples, memorials and monuments. Several
+          beaches in the country are sites of adventure sports like skiing,
+          scuba diving, parasailing and windsurfing. India's coastal line
+          lures many migratory birds and aquatic life to come and nestle on
+          the sun-kissed shores.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <h2>Waterpark</h2>
+        <br />
+        <p>
+          The weather is fast reaching boiling point and summer vacations for
+          schools and colleges have begun! Kickstart the summer while you can
+          still make your way out of the house and to the nearest available
+          mode of transport and head to one (or all) of these best water parks
+          in India, just so you can take a dip, sit back, relax and let out a
+          sigh. Because life is too short and sweet to be sitting on the shore
+          when you can be playing with water.<br /><br />
+          Some great buildings have also been built in India by the British.
+          They are Parliament House, Rashtrapati Bhavan, Victoria Memorial
+          etc. <br /><br />All these monuments tell the story of the past but
+          will stand gloriously beyond the present, perhaps, forever.
+        </p>
+      </div>
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/w1.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/c1.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+      <div class="column">
+        <h2>Caves</h2>
+        <br />
+        <p>
+          Caves represent a special aura, one of mystery and history fused
+          together in an enchanting combination that draws out our inner
+          explorers. <br /><br />India is blessed with several caves that
+          promise delightful trips by all means. You must have heard of Angkor
+          Wat in Cambodia which is on many a traveller’s bucket list. However,
+          you can plan a simpler visit to some of the best caves in India to
+          satiate your craving for adventure.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Sanctuary</h2>
+        <br />
+        <p>
+          India is famous for its vast and varied terrain that is home to some
+          unique flora and fauna species. It is indeed a haven for those who
+          love nature and wildlife. Boasting of rich biodiversity and varied
+          geographical features, this country is home to an incredible number
+          of wildlife species. <br /><br />There is something here for every
+          wildlife enthusiast and nature lover. As you travel across India,
+          you will be struck by the incredible adaptations and variations in
+          the flora and fauna. <br /><br />India boasts of a large number of
+          wildlife sanctuaries and these parks are home to some rare and
+          exotic species of animals like the one-horned rhinoceros, royal
+          Bengal tiger, snow leopard, Asiatic lion and many more.
+        </p>
+      </div>
+      <div class="column">
+        <div class="img"></div>
+        <img src="./img/s1.jpg" alt="" style="height: 270px; width: 100%" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <br /><br />
+      <h2>Tours and Travels</h2>
+      <p>
+        Tourism is the largest and fastest-growing industry across the world. It is a source of revenue and employment.
+        It also gives the opportunity for people to understand the culture, civilization, and religious aspects of a
+        country.
+        There are many countries whose main source of revenue is Tourism
+      </p>
+      <ul class="socials">
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy; <a href="#">Tours and Travels</a></p>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="..\aboutus.html">About Us</a></li>
+          <li><a href="..\contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!--js link--->
+  <script type="text/javascript" src="navabar.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
